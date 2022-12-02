@@ -1,0 +1,76 @@
+CRITICAL - 2022-12-02 07:48:51 --> Class 'App\Controllers\ProductosModel' not found
+in APPPATH\Controllers\ProductoController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ProductoController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 07:49:19 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+in APPPATH\Models\ProductosModel.php on line 10.
+ 1 APPPATH\Controllers\ProductoController.php(11): App\Models\ProductosModel->obtenerProductos()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ProductoController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 07:49:30 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::num_rows()
+in APPPATH\Models\ProductosModel.php on line 11.
+ 1 APPPATH\Controllers\ProductoController.php(11): App\Models\ProductosModel->obtenerProductos()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ProductoController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 07:52:22 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getResultJSON()
+in APPPATH\Models\ProductosModel.php on line 12.
+ 1 APPPATH\Controllers\ProductoController.php(11): App\Models\ProductosModel->obtenerProductos()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ProductoController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 07:52:26 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getResultJson()
+in APPPATH\Models\ProductosModel.php on line 12.
+ 1 APPPATH\Controllers\ProductoController.php(11): App\Models\ProductosModel->obtenerProductos()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ProductoController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 07:52:26 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getResultJson()
+in APPPATH\Models\ProductosModel.php on line 12.
+ 1 APPPATH\Controllers\ProductoController.php(11): App\Models\ProductosModel->obtenerProductos()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ProductoController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 07:52:26 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getResultJson()
+in APPPATH\Models\ProductosModel.php on line 12.
+ 1 APPPATH\Controllers\ProductoController.php(11): App\Models\ProductosModel->obtenerProductos()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ProductoController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 08:53:49 --> Object of class stdClass could not be converted to string
+in APPPATH\Controllers\ProductoController.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ProductoController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 08:53:57 --> Object of class stdClass could not be converted to string
+in APPPATH\Controllers\ProductoController.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ProductoController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 08:59:57 --> json_decode() expects parameter 1 to be string, array given
+in APPPATH\Controllers\ProductoController.php on line 15.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'json_decode() expects parameter 1 to be string, array given', 'APPPATH\\Controllers\\ProductoController.php', 15, [...])
+ 2 APPPATH\Controllers\ProductoController.php(15): json_decode([...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ProductoController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 09:00:02 --> json_decode() expects parameter 1 to be string, array given
+in APPPATH\Controllers\ProductoController.php on line 15.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'json_decode() expects parameter 1 to be string, array given', 'APPPATH\\Controllers\\ProductoController.php', 15, [...])
+ 2 APPPATH\Controllers\ProductoController.php(15): json_decode([...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\ProductoController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

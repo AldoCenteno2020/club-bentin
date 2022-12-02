@@ -1,0 +1,54 @@
+CRITICAL - 2022-11-30 21:52:29 --> syntax error, unexpected end of file
+in APPPATH\Views\loginView.php on line 2.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('loginView', [], true)
+ 3 APPPATH\Controllers\LoginController.php(9): view('loginView')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 21:54:24 --> syntax error, unexpected end of file
+in APPPATH\Views\loginView.php on line 2.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('loginView', [], true)
+ 3 APPPATH\Controllers\LoginController.php(9): view('loginView')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 21:54:30 --> syntax error, unexpected end of file
+in APPPATH\Views\loginView.php on line 2.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('loginView', [], true)
+ 3 APPPATH\Controllers\LoginController.php(9): view('loginView')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 23:53:12 --> Invalid file: PanelView.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('PanelView.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('PanelView', [], true)
+ 3 APPPATH\Controllers\PanelController.php(9): view('PanelView')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PanelController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PanelController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 23:53:24 --> Invalid file: PanelView.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('PanelView.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('PanelView', [], true)
+ 3 APPPATH\Controllers\PanelController.php(9): view('PanelView')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PanelController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PanelController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 23:53:24 --> Invalid file: PanelView.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('PanelView.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('PanelView', [], true)
+ 3 APPPATH\Controllers\PanelController.php(9): view('PanelView')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PanelController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PanelController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
