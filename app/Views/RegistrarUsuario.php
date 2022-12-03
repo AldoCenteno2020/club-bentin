@@ -51,7 +51,7 @@
                             <input type="text" class="form-control" id="dni" name="dni">
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="inputAddress2">Número de celular</label>
+                            <label for="inputAddress2">Número de celularss</label>
                             <input type="text" class="form-control" id="fono" name="fono">
                         </div>
                     </div>
