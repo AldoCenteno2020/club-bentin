@@ -1,0 +1,2196 @@
+CRITICAL - 2022-12-01 00:11:40 --> Class 'App\Controllers\LoginModel' not found
+in APPPATH\Controllers\LoginController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:12:07 --> mysqli_sql_exception: Unknown column 'usuario' in 'where clause' in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(21): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:12:07 --> Unknown column 'usuario' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(21): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:12:12 --> mysqli_sql_exception: Unknown column 'usuario' in 'where clause' in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(21): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:12:12 --> Unknown column 'usuario' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(21): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:12:40 --> Undefined variable: Usuario
+in APPPATH\Controllers\LoginController.php on line 20.
+ 1 APPPATH\Controllers\LoginController.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: Usuario', 'APPPATH\\Controllers\\LoginController.php', 20, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:13:33 --> mysqli_sql_exception: Unknown column 'usuario' in 'where clause' in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:13:33 --> Unknown column 'usuario' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:14:10 --> Too few arguments to function App\Models\LoginModel::obtenerUsuario(), 0 passed in C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php on line 20 and exactly 1 expected
+in APPPATH\Models\LoginModel.php on line 8.
+ 1 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:14:20 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 23.
+ 1 APPPATH\Controllers\LoginController.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 23, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:14:21 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 23.
+ 1 APPPATH\Controllers\LoginController.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 23, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:15:01 --> Array to string conversion
+in APPPATH\Models\LoginModel.php on line 13.
+ 1 APPPATH\Models\LoginModel.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Models\\LoginModel.php', 13, [...])
+ 2 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:15:02 --> Array to string conversion
+in APPPATH\Models\LoginModel.php on line 13.
+ 1 APPPATH\Models\LoginModel.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Models\\LoginModel.php', 13, [...])
+ 2 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:15:13 --> Undefined offset: 0
+in APPPATH\Models\LoginModel.php on line 13.
+ 1 APPPATH\Models\LoginModel.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Models\\LoginModel.php', 13, [...])
+ 2 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:15:16 --> Cannot use [] for reading
+in APPPATH\Models\LoginModel.php on line 13.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-01 00:15:26 --> Array to string conversion
+in APPPATH\Models\LoginModel.php on line 13.
+ 1 APPPATH\Models\LoginModel.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Models\\LoginModel.php', 13, [...])
+ 2 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:15:26 --> Array to string conversion
+in APPPATH\Models\LoginModel.php on line 13.
+ 1 APPPATH\Models\LoginModel.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Models\\LoginModel.php', 13, [...])
+ 2 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:15:44 --> Array to string conversion
+in APPPATH\Models\LoginModel.php on line 13.
+ 1 APPPATH\Models\LoginModel.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Models\\LoginModel.php', 13, [...])
+ 2 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:15:45 --> Array to string conversion
+in APPPATH\Models\LoginModel.php on line 13.
+ 1 APPPATH\Models\LoginModel.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Models\\LoginModel.php', 13, [...])
+ 2 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:15:56 --> mysqli_sql_exception: Unknown column 'usuario' in 'where clause' in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:15:56 --> Unknown column 'usuario' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:15:57 --> mysqli_sql_exception: Unknown column 'usuario' in 'where clause' in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:15:57 --> Unknown column 'usuario' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:16:01 --> mysqli_sql_exception: Table 'club-bentin.asd' doesn't exist in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:16:01 --> Table 'club-bentin.asd' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `asd`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `asd`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `asd`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `asd`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:16:02 --> mysqli_sql_exception: Table 'club-bentin.asd' doesn't exist in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:16:02 --> Table 'club-bentin.asd' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `asd`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `asd`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `asd`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `asd`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:16:02 --> mysqli_sql_exception: Table 'club-bentin.asd' doesn't exist in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:16:02 --> Table 'club-bentin.asd' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `asd`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `asd`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `asd`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `asd`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:16:02 --> mysqli_sql_exception: Table 'club-bentin.asd' doesn't exist in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:16:02 --> Table 'club-bentin.asd' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `asd`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `asd`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `asd`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `asd`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:16:03 --> mysqli_sql_exception: Table 'club-bentin.asd' doesn't exist in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:16:03 --> Table 'club-bentin.asd' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `asd`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `asd`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `asd`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `asd`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:16:06 --> mysqli_sql_exception: Table 'club-bentin.asdss' doesn't exist in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:16:06 --> Table 'club-bentin.asdss' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `asdss`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `asdss`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `asdss`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `asdss`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:16:06 --> mysqli_sql_exception: Table 'club-bentin.asdss' doesn't exist in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:16:06 --> Table 'club-bentin.asdss' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `asdss`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `asdss`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `asdss`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `asdss`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:16:15 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'club-bentinss' in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'club-bentinss', 3306, '', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'club-bentinss' in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#5 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-01 00:16:15 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'club-bentinss'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `asdss`
+WHERE `usuario` = :usuario:', [...], false)
+ 3 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:16:20 --> mysqli_sql_exception: Table 'club-bentin.asdss' doesn't exist in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:16:20 --> Table 'club-bentin.asdss' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `asdss`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `asdss`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `asdss`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `asdss`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:16:23 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'club-bentins' in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'club-bentins', 3306, '', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'club-bentins' in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#5 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-01 00:16:23 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'club-bentins'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `asdss`
+WHERE `usuario` = :usuario:', [...], false)
+ 3 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:16:26 --> mysqli_sql_exception: Table 'club-bentin.asdss' doesn't exist in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:16:26 --> Table 'club-bentin.asdss' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `asdss`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `asdss`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `asdss`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `asdss`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:16:29 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', 's', 'club-bentin', 3306, '', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Acce******** denied for u****er '****'@'localho****t' (u****ing pa********word: YES) in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#5 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-01 00:16:29 --> Unable to connect to the database.
+Main connection [MySQLi]: Acce******** denied for u****er '****'@'localho****t' (u****ing pa********word: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `asdss`
+WHERE `usuario` = :usuario:', [...], false)
+ 3 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:16:31 --> mysqli_sql_exception: Table 'club-bentin.asdss' doesn't exist in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:16:31 --> Table 'club-bentin.asdss' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `asdss`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `asdss`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `asdss`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `asdss`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:16:51 --> mysqli_sql_exception: Unknown column 'usuario' in 'where clause' in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:16:51 --> Unknown column 'usuario' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:17:40 --> mysqli_sql_exception: Table 'club-bentin.usuarioss' doesn't exist in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:17:40 --> Table 'club-bentin.usuarioss' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuarioss`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarioss`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarioss`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarioss`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:17:43 --> mysqli_sql_exception: Table 'club-bentin.usuariossa' doesn't exist in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:17:43 --> Table 'club-bentin.usuariossa' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuariossa`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuariossa`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuariossa`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuariossa`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:17:43 --> mysqli_sql_exception: Table 'club-bentin.usuariossa' doesn't exist in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:17:43 --> Table 'club-bentin.usuariossa' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuariossa`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuariossa`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuariossa`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuariossa`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:17:45 --> mysqli_sql_exception: Unknown column 'usuario' in 'where clause' in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:17:45 --> Unknown column 'usuario' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:17:45 --> mysqli_sql_exception: Unknown column 'usuario' in 'where clause' in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:17:45 --> Unknown column 'usuario' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:17:47 --> mysqli_sql_exception: Table 'club-bentin.usuario' doesn't exist in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:17:47 --> Table 'club-bentin.usuario' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuario`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuario`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuario`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:17:48 --> mysqli_sql_exception: Table 'club-bentin.usuario' doesn't exist in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:17:48 --> Table 'club-bentin.usuario' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuario`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuario`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuario`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:17:48 --> mysqli_sql_exception: Table 'club-bentin.usuario' doesn't exist in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:17:48 --> Table 'club-bentin.usuario' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuario`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuario`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuario`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:19:09 --> mysqli_sql_exception: Unknown column 'usuario' in 'where clause' in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:19:09 --> Unknown column 'usuario' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:19:09 --> mysqli_sql_exception: Unknown column 'usuario' in 'where clause' in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:19:09 --> Unknown column 'usuario' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:19:10 --> mysqli_sql_exception: Unknown column 'usuario' in 'where clause' in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:19:10 --> Unknown column 'usuario' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:19:11 --> mysqli_sql_exception: Unknown column 'usuario' in 'where clause' in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:19:11 --> Unknown column 'usuario' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:19:37 --> mysqli_sql_exception: Unknown column 'usuario' in 'where clause' in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:19:37 --> Unknown column 'usuario' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:19:37 --> mysqli_sql_exception: Unknown column 'usuario' in 'where clause' in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:19:37 --> Unknown column 'usuario' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:19:37 --> mysqli_sql_exception: Unknown column 'usuario' in 'where clause' in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:19:37 --> Unknown column 'usuario' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:19:37 --> mysqli_sql_exception: Unknown column 'usuario' in 'where clause' in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:19:37 --> Unknown column 'usuario' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:19:38 --> mysqli_sql_exception: Unknown column 'usuario' in 'where clause' in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:19:38 --> Unknown column 'usuario' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:19:56 --> mysqli_sql_exception: Unknown column 'usuario' in 'where clause' in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:19:56 --> Unknown column 'usuario' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `padres`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `padres`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `padres`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `padres`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:19:57 --> mysqli_sql_exception: Unknown column 'usuario' in 'where clause' in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:19:57 --> Unknown column 'usuario' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `padres`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `padres`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `padres`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `padres`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:19:59 --> mysqli_sql_exception: Table 'club-bentin.padresas' doesn't exist in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:19:59 --> Table 'club-bentin.padresas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `padresas`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `padresas`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `padresas`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `padresas`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:19:59 --> mysqli_sql_exception: Table 'club-bentin.padresas' doesn't exist in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:19:59 --> Table 'club-bentin.padresas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `padresas`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `padresas`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `padresas`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `padresas`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:20:00 --> mysqli_sql_exception: Table 'club-bentin.padresas' doesn't exist in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:20:00 --> Table 'club-bentin.padresas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `padresas`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `padresas`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `padresas`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `padresas`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:20:00 --> mysqli_sql_exception: Table 'club-bentin.padresas' doesn't exist in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:20:00 --> Table 'club-bentin.padresas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `padresas`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `padresas`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `padresas`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `padresas`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:20:00 --> mysqli_sql_exception: Table 'club-bentin.padresas' doesn't exist in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:20:00 --> Table 'club-bentin.padresas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `padresas`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `padresas`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `padresas`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `padresas`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:20:00 --> mysqli_sql_exception: Table 'club-bentin.padresas' doesn't exist in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:20:00 --> Table 'club-bentin.padresas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `padresas`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `padresas`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `padresas`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `padresas`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:20:00 --> mysqli_sql_exception: Table 'club-bentin.padresas' doesn't exist in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:20:00 --> Table 'club-bentin.padresas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `padresas`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `padresas`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `padresas`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `padresas`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:20:01 --> mysqli_sql_exception: Table 'club-bentin.padresas' doesn't exist in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:20:01 --> Table 'club-bentin.padresas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `padresas`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `padresas`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `padresas`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `padresas`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:20:56 --> Call to undefined function App\Models\cubrid_db_name()
+in APPPATH\Models\LoginModel.php on line 13.
+ 1 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:22:04 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:22:05 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:22:40 --> mysqli_sql_exception: Table 'club-bentin.padresas' doesn't exist in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:22:40 --> Table 'club-bentin.padresas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `padresas`
+WHERE `usuario` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `padresas`
+WHERE `usuario` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `padresas`
+WHERE `usuario` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `padresas`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:23:16 --> mysqli_sql_exception: Table 'club-bentin.padresas' doesn't exist in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:23:16 --> Table 'club-bentin.padresas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `padresas`
+WHERE `Nick_Usuarios` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `padresas`
+WHERE `Nick_Usuarios` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `padresas`
+WHERE `Nick_Usuarios` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `padresas`
+WHERE `Nick_Usuarios` = :Nick_Usuarios:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:23:17 --> mysqli_sql_exception: Table 'club-bentin.padresas' doesn't exist in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:23:17 --> Table 'club-bentin.padresas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `padresas`
+WHERE `Nick_Usuarios` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `padresas`
+WHERE `Nick_Usuarios` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `padresas`
+WHERE `Nick_Usuarios` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `padresas`
+WHERE `Nick_Usuarios` = :Nick_Usuarios:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:23:17 --> mysqli_sql_exception: Table 'club-bentin.padresas' doesn't exist in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:23:17 --> Table 'club-bentin.padresas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `padresas`
+WHERE `Nick_Usuarios` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `padresas`
+WHERE `Nick_Usuarios` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `padresas`
+WHERE `Nick_Usuarios` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `padresas`
+WHERE `Nick_Usuarios` = :Nick_Usuarios:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:23:32 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:23:36 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:24:09 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:24:31 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:24:31 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:24:31 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:24:32 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:24:32 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:25:03 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:25:04 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:25:06 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:25:21 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:25:21 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:25:22 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:25:49 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:25:49 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:25:50 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:26:13 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:26:24 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:26:24 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:26:27 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:26:59 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:26:59 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:31:52 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:31:54 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:32:16 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:32:19 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:32:31 --> Undefined offset: 0
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:32:41 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:33:15 --> Array to string conversion
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:33:19 --> Array to string conversion
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:33:21 --> Array to string conversion
+in APPPATH\Controllers\LoginController.php on line 22.
+ 1 APPPATH\Controllers\LoginController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\LoginController.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:33:37 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 24.
+ 1 APPPATH\Controllers\LoginController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 24, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:34:37 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 23.
+ 1 APPPATH\Controllers\LoginController.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 23, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:34:44 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 23.
+ 1 APPPATH\Controllers\LoginController.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 23, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 00:35:02 --> mysqli_sql_exception: Table 'club-bentin.ususarios' doesn't exist in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-01 00:35:02 --> Table 'club-bentin.ususarios' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `ususarios`
+WHERE `Nick_Usuarios` = \'asdsa\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `ususarios`
+WHERE `Nick_Usuarios` = \'asdsa\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `ususarios`
+WHERE `Nick_Usuarios` = \'asdsa\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ususarios`
+WHERE `Nick_Usuarios` = :Nick_Usuarios:', [...], false)
+ 5 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LoginController.php(20): App\Models\LoginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:35:05 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 23.
+ 1 APPPATH\Controllers\LoginController.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 23, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:35:26 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 23.
+ 1 APPPATH\Controllers\LoginController.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 23, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:35:29 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 23.
+ 1 APPPATH\Controllers\LoginController.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 23, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:36:25 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 23.
+ 1 APPPATH\Controllers\LoginController.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 23, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:37:24 --> Undefined variable: datosUsusario
+in APPPATH\Controllers\LoginController.php on line 23.
+ 1 APPPATH\Controllers\LoginController.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datosUsusario', 'APPPATH\\Controllers\\LoginController.php', 23, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:38:12 --> syntax error, unexpected '}', expecting ';' or ','
+in APPPATH\Controllers\LoginController.php on line 35.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\LoginController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\LoginController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\LoginController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\LoginController')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\LoginController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 00:38:12 --> syntax error, unexpected '}', expecting ';' or ','
+in APPPATH\Controllers\LoginController.php on line 35.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\LoginController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\LoginController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\LoginController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\LoginController')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\LoginController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 08:44:24 --> Call to a member function with() on string
+in APPPATH\Controllers\PanelController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PanelController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PanelController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 08:59:15 --> Invalid file: /.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('C:\\', [], true)
+ 3 APPPATH\Controllers\PanelController.php(12): view('C:\\')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PanelController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PanelController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 09:13:00 --> Invalid file: /.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('C:\\', [], true)
+ 3 APPPATH\Controllers\PanelController.php(12): view('C:\\')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PanelController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PanelController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 09:13:01 --> Invalid file: /.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('C:\\', [], true)
+ 3 APPPATH\Controllers\PanelController.php(12): view('C:\\')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PanelController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PanelController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 09:20:48 --> Invalid file: /.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('C:\\', [], true)
+ 3 APPPATH\Controllers\PanelController.php(12): view('C:\\')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PanelController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PanelController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 22:25:21 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'club-bentin' in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'club-bentin', 3306, '', 0)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(26): App\Models\LoginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'club-bentin' in C:\xampp\htdocs\Club-bentin\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Club-bentin\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Club-bentin\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Club-bentin\app\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Club-bentin\app\Controllers\LoginController.php(26): App\Models\LoginModel->obtenerUsuario(Array)
+#5 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(927): App\Controllers\LoginController->login()
+#6 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#7 C:\xampp\htdocs\Club-bentin\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Club-bentin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-01 22:25:21 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'club-bentin'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `Nick_Usuarios` = :Nick_Usuarios:', [...], false)
+ 3 APPPATH\Models\LoginModel.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\LoginController.php(26): App\Models\LoginModel->obtenerUsuario([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
