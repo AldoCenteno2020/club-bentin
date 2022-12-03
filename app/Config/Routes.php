@@ -40,6 +40,7 @@ $routes->post('/login', 'LoginController::login');
 $routes->get('cerrar-sesion', 'LoginController::logout');
 $routes->get('panel', 'PanelController::index');
 $routes->get('tabla-productos', 'ProductoController::index');
+$routes->get('agregar-usuario', 'UsuarioController::index');
 
 /*
  * --------------------------------------------------------------------

@@ -74,3 +74,21 @@ in APPPATH\Controllers\ProductoController.php on line 15.
  4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
  5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 22:05:47 --> Invalid file: agregar-usuario.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('agregar-usuario.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('agregar-usuario', [], true)
+ 3 APPPATH\Controllers\UsuarioController.php(13): view('agregar-usuario')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\UsuarioController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-02 22:05:51 --> Invalid file: agregar-usuario.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('agregar-usuario.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('agregar-usuario', [], true)
+ 3 APPPATH\Controllers\UsuarioController.php(13): view('agregar-usuario')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\UsuarioController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
