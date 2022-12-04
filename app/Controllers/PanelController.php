@@ -14,13 +14,4 @@ class PanelController extends BaseController
         }      
     }
 
-    public function RegistroProducto()
-    {
-        if(!session()->is_logged){
-            // return redirect()->to(base_url('/'));
-            return redirect()->to(base_url('/'));
-        }else{
-            return view('RegistroProductoView');     
-        }      
-    }
 }

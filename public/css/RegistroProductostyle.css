@@ -1,0 +1,13 @@
+.Tabla-Productos{
+    margin: 10px;
+}
+
+.cabecera-tabla{
+    background-color: #106cfc;
+    color:#ffffff;
+    
+}
+
+.cabecera-tabla th{
+    border-radius: 5px;
+}

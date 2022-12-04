@@ -39,7 +39,8 @@ $routes->get('/', 'LoginController::index');
 $routes->post('/login', 'LoginController::login');
 $routes->get('cerrar-sesion', 'LoginController::logout');
 $routes->get('panel', 'PanelController::index');
-$routes->get('Registro-Producto', 'PanelController::RegistroProducto');
+$routes->get('Registro-Producto', 'ProductosController::RegistroProducto');
+$routes->get('/ObtenerNombreProductos/(:any)', 'RegistroProductosController::ObtenerNombreProductos/$1');
 
 /*
  * --------------------------------------------------------------------
