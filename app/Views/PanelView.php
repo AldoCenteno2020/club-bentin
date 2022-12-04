@@ -63,41 +63,7 @@
                     </div>
                 </div>
                 <!-- contenido -->
-                <div class="container-fluid px-4">
-                    <div class="row">
-                        <div class="col">
-                            <table id="dataTable" class="table">
-                                <thead>
-                                    <tr>
-                                        <th>#</th>
-                                        <th>Nombre</th>
-                                        <th>Precio</th>
-                                        <th>Stock</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="tableBody"></tbody>
-                            </table>
-                            <!-- asdasd -->
-                            <table id="tabla2" class="display" style="width:100%">
-                                <thead>
-                                    <tr>
-                                        <th>id</th>
-                                        <th>Name</th>
-                                        <th>Phone</th>
-                                        <th>Job</th>
-                                        <th>Created at</th>
-                                    </tr>
-                                </thead>
-                                <tfoot>
-                                    <tr>
-                                        <<th>id</th>
-                                        <th>Name</th>
-                                        <th>Phone</th>
-                                        <th>Job</th>
-                                        <th>Created at</th>
-                                    </tr>
-                                </tfoot>
-                            </table>
+                
                             <!-- asdas -->
                         </div>
                     </div>
